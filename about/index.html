@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>NewsGeek - Accueil</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+	<link href='style/css.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>  
+</head>
+<body>
+	<div id="barre_menu">
+		<div id="titre">NewsGeek</div>
+		<div id="menu">
+			<ul>
+				<li><a href="about/index.html"><div class="btn_menu">ACCUEIL</div></a></li>
+				<li><a href="about/index.html"><div class="btn_menu">FORUM</div></a></li>
+				<li><a href="about/index.html"><div class="btn_menu">ABOUT</div></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main">
+		<div id="presentation">La team NewsGeek, une équipe mais surtout un groupe d'amis présentant les informations quotidiennes de la toile, dans le domaine de l'informatique et des nouvelles technologies. Néanmoins, NewsGeek ne se limite pas à présenter les infos ! En effet, l'équipe se charge de vous montrer leur dernières créations en terme de musique, de dessins, etc... en compagnie de Flo31, MestriL et SuperSageto !</div>
+	</div>
+	<div id="barre_laterale">
+		<div id="car_photo">
+		    <div class="slideshow">  
+		        <ul>  
+		            <li><img src="../images/Photo0438.jpg" alt="" height="100%" width="350px"/></li>  
+		            <li><img src="../images/Facebook-20140820-113425-Récupéré.jpg" alt="" height="100%" width="350px"/></li>  
+		            <li><img src="../images/Facebook-20140820-113519.jpg" alt="" height="100%" width="350px"/></li>
+		        </ul> 
+		    </div>
+		    <div id="bar_pre">
+		    	NewsGeek vous présente son équipe !
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">  
+   $(function(){  
+      	setInterval(function(){  
+         $(".slideshow ul").animate({marginLeft:-350},800,function(){  
+            $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));  
+         })  
+      	}, 3500);
+   });
+</script>
